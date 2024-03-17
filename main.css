@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fefbf6;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar-container {
+  width: 100%;
+  padding-block: 1rem;
+  margin-inline: auto;
+  background: #8cb9bd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  border-radius: 16px;
+}
+
+header.navbar-container .logo img {
+  width: 50px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #113946;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #ecb159;
+  color: #113946;
+  font-weight: bold;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+  color: #113946;
+  margin-top: 26vh;
+  margin-bottom: 26vh;
+}
+
+.card {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #113946;
+}
+.input_section,
+#editForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 16px;
+  width: 600px; /* Sesuaikan lebar formulir */
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.input_section .input,
+#editForm .input {
+  margin: 8px 0;
+}
+
+.input_section button,
+#editForm button {
+  background-color: #8cb9bd;
+  font-size: 14px;
+  color: #113946;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.input_section button:hover,
+#editForm button:hover {
+  background-color: #ecb159;
+  color: #113946;
+}
+
+.input_section button span,
+#editForm button span {
+  font-weight: bold;
+}
+
+.input_section form .input input,
+#editForm .input input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+}
+
+.input_section .input input:focus,
+#editForm .input input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #8cb9bd; /* Add focus style */
+}
+
+input::placeholder {
+  color: grey;
+}
+
+.input_section .input label,
+#editForm .input label {
+  color: #113946;
+  font-size: 14px;
+}
+
+.input_section .input_inline,
+#editForm .input_inline {
+  margin: 12px 0;
+  font-size: 14px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input_section .input_inline label,
+#editForm .input_inline label {
+  color: #113946;
+  margin-right: 10px;
+}
+
+.search_section {
+  padding: 10px;
+  border-radius: 5px;
+  width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search_section input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.search_section button {
+  padding: 8px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 9px;
+  background-color: #8cb9bd;
+  color: #113946;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search_section button:hover {
+  background-color: #222831;
+  color: #dee2e6;
+}
+
+.bookCard {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+}
+
+.bookCard h3 {
+  color: #113946;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.bookCard p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.bookCard button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bookCard button:hover {
+  background-color: #0056b3;
+}
+
+.bookCard button i {
+  margin-right: 5px;
+}
+
+#belumDibaca .bookCard button {
+  background-color: #8cb9bd;
+  color: #113946;
+  font-weight: bold;
+}
+
+#belumDibaca .bookCard button:hover {
+  background-color: #2d3250;
+  color: #dee2e6;
+}
+
+#sudahDibaca .bookCard button {
+  background-color: #ecb159;
+  color: #113946;
+  font-weight: bold;
+}
+
+#sudahDibaca .bookCard button:hover {
+  background-color: #222831;
+  color: #ecb159;
+}
+
+#belumDibaca .bookCard button.deleteButton {
+  background-color: #ff4d4d;
+}
+
+#belumDibaca .bookCard button.deleteButton:hover {
+  color: #dee2e6;
+}
+
+#sudahDibaca .bookCard button.deleteButton:hover {
+  color: #dee2e6;
+}
+
+#sudahDibaca .bookCard button.deleteButton {
+  background-color: #ff4d4d;
+}
+
+@media screen and (max-width: 1200px) {
+  header.navbar-container .nav-list ul {
+    gap: 1rem;
+    text-align: center;
+  }
+
+  header.navbar-container .nav-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  header.navbar-container .nav-list li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+
+  .jumbotron p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .input_section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search_section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search_section input {
+    width: calc(100% - 50px);
+  }
+
+  .bookCard {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  header.navbar-container .nav-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  header.navbar-container .nav-list li a {
+    padding: 0.5rem 1rem;
+  }
+  .jumbotron h1 {
+    font-size: 20px;
+  }
+
+  .jumbotron p {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .input_section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .search_section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .search_section input {
+    width: calc(100% - 40px);
+  }
+
+  .bookCard {
+    width: 90%;
+  }
+}
